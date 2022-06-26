@@ -1,0 +1,21 @@
+{
+    "name": "eirys",
+    "displayName": "Eirys",
+    "description": "Personal color theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Eirys",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Eirys-color-theme.json"
+            }
+        ]
+    }
+}
