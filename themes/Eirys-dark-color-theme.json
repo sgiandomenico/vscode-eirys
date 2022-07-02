@@ -31,13 +31,73 @@
       }
     },
     {
-      "name": "Variable",
+      "name": "Number",
       "scope": [
-        "variable",
-        "string constant.other.placeholder"
+        "constant.numeric",
+        // "keyword.other.unit",
+        // "keyword.other"
       ],
       "settings": {
-        "foreground": "#fff"
+        "foreground": "#f96"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string",
+        // "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#f96"
+      }
+    },
+    {
+      "name": "Escape Character",
+      "scope": [
+        "constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#f3f"
+      }
+    },
+    {
+      "name": "Regular Expression",
+      "scope": [
+        "string.regexp"
+      ],
+      "settings": {
+        "foreground": "#f66",
+        // "fontStyle": "underline"
+      }
+    },
+    // {
+    //     "name": "Symbol",
+    //     "scope": [
+    //         "constant.other.symbol",
+    //         "constant.other.key",
+    //     ],
+    //     "settings": {
+    //         "foreground": "#e10000"
+    //     }
+    // },
+    {
+      "name": "Language Constant",
+      "scope": [
+        "constant.language",
+        "support.constant",
+      ],
+      "settings": {
+        "foreground": "#f96",
+        // "foreground": "#ff3",
+      }
+    },
+    {
+      "name": "this",
+      "scope": [
+        "variable.language.this",
+      ],
+      "settings": {
+        "foreground": "#ff3",
       }
     },
     {
@@ -59,7 +119,7 @@
       ],
       "settings": {
         "foreground": "#f0f",
-        "fontStyle": ""
+        "fontStyle": "", // Prevent spillover from declaration formatting.
       }
     },
     {
@@ -71,16 +131,6 @@
       ],
       "settings": {
         "fontStyle": "underline"
-      }
-    },
-    {
-      "name": "Storage",
-      "scope": [
-        "storage.type",
-        "storage.modifier"
-      ],
-      "settings": {
-        "foreground": "#96f"
       }
     },
     {
@@ -122,93 +172,43 @@
       }
     },
     {
-      "name": "Number",
+      "name": "Variable",
       "scope": [
-        "constant.numeric",
-        // "keyword.other.unit",
-        // "keyword.other"
+        "variable",
+        "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#f96"
+        "foreground": "#fff"
       }
     },
     {
-      "name": "String",
+      "name": "Constant Variable (Global/Default)",
       "scope": [
-        "string",
-        // "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+        "variable.other.constant",
+        "variable.other.enummember",
       ],
       "settings": {
-        "foreground": "#f96"
-      }
-    },
-    // {
-    //     "name": "Symbol",
-    //     "scope": [
-    //         "constant.other.symbol",
-    //         "constant.other.key",
-    //     ],
-    //     "settings": {
-    //         "foreground": "#e10000"
-    //     }
-    // },
-    {
-      "name": "Regular Expression",
-      "scope": [
-        "string.regexp"
-      ],
-      "settings": {
-        "foreground": "#f66",
-        // "fontStyle": "underline"
+        "foreground": "#fc0",
       }
     },
     {
-      "name": "Escape Character",
+      "name": "Local const Variable",
       "scope": [
-        "constant.character.escape"
+        "meta.block variable.other.constant",
       ],
       "settings": {
-        "foreground": "#f3f"
+        "foreground": "#ffa",
       }
     },
     {
-      "name": "Language Constant",
+      "name": "Storage",
       "scope": [
-        "constant.language",
-        "support.constant",
+        "storage.type",
+        "storage.modifier"
       ],
       "settings": {
-        "foreground": "#f96",
-        // "foreground": "#ff3",
+        "foreground": "#96f"
       }
-    },
-    {
-      "name": "this",
-      "scope": [
-        "variable.language.this",
-      ],
-      "settings": {
-        "foreground": "#ff3",
-      }
-    },
-    {
-        "name": "Constant Variable (Global/Default)",
-        "scope": [
-            "variable.other.constant",
-            "variable.other.enummember",
-        ],
-        "settings": {
-            "foreground": "#fc0",
-        }
-    },
-    {
-        "name": "Local const Variable",
-        "scope": [
-            "meta.block variable.other.constant",
-        ],
-        "settings": {
-            "foreground": "#ffa",
-        }
     },
     {
       "name": "Class, Support",
@@ -226,7 +226,7 @@
       "name": "Tag",
       "scope": [
         "entity.name.tag",
-        "meta.tag.sgml",
+        // "meta.tag.sgml",
         // "markup.deleted.git_gutter"
       ],
       "settings": {
@@ -292,7 +292,7 @@
       "foreground": "#ffa",
     },
     "variable.defaultLibrary": {
-        "foreground": "#fc0",
+      "foreground": "#fc0",
     },
   }
 }
