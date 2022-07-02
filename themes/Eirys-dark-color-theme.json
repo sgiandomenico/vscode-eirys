@@ -2,7 +2,7 @@
   "name": "Eirys Dark",
   "colors": {
     "editor.background": "#000000",
-    "editor.foreground": "#fff",
+    "editor.foreground": "#ccc",
     "activityBarBadge.background": "#007acc",
     "sideBarTitle.foreground": "#bbbbbb"
   },
@@ -37,7 +37,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#ffa"
+        "foreground": "#fff"
       }
     },
     {
@@ -66,7 +66,7 @@
       "name": "Declaration",
       "scope": [
         "meta.definition",
-        "mata.parameters variable.parameter",
+        "meta.parameters variable.parameter",
         "meta.object-literal.key",
       ],
       "settings": {
@@ -172,30 +172,43 @@
       }
     },
     {
-      "name": "Constant",
+      "name": "Language Constant",
       "scope": [
-        "constant",
-        // "variable.other.constant",
-        "variable.other.enummember",
-        // "variable.language.this",
+        "constant.language",
         "support.constant",
       ],
       "settings": {
         "foreground": "#f96",
-        // "fontStyle": "underline",
+        // "foreground": "#ff3",
       }
     },
     {
-      "name": "Const var",
+      "name": "this",
       "scope": [
-        "variable.other.constant",
         "variable.language.this",
       ],
       "settings": {
-        "foreground": "#fc0",
-        // "fontStyle": "underline"
-        // "fontStyle": "bold"
+        "foreground": "#ff3",
       }
+    },
+    {
+        "name": "Constant Variable (Global/Default)",
+        "scope": [
+            "variable.other.constant",
+            "variable.other.enummember",
+        ],
+        "settings": {
+            "foreground": "#fc0",
+        }
+    },
+    {
+        "name": "Local const Variable",
+        "scope": [
+            "meta.block variable.other.constant",
+        ],
+        "settings": {
+            "foreground": "#ffa",
+        }
     },
     {
       "name": "Class, Support",
@@ -263,17 +276,19 @@
   ],
   "semanticTokenColors": {
     "variable": {
-      "italic": true,
-      // "underline": true,
+      "italic": true, // Globals
+    },
+    "variable.readonly": {
+      // Global constants.
+      "foreground": "#fc0",
     },
     "variable.local": {
+      // Local variables.
       "italic": false,
-      // "underline": false,
     },
-    "*.declaration": {
-      "underline": true,
-      // "italic": true,
-      // "bold": true,
+    "variable.local.readonly": {
+      // Local constants.
+      "foreground": "#ffa",
     },
   }
 }
