@@ -114,10 +114,11 @@
         "variable.other.object.property",
         "variable.object.property",
         "meta.object-literal.key",
-        "support.variable.property"
+        "support.variable.property",
+        "support.type.property-name",
       ],
       "settings": {
-        "foreground": "#39f"
+        "foreground": "#4af"
       }
     },
     {
@@ -198,14 +199,13 @@
     {
       "name": "Class, Support",
       "scope": [
-        // "entity.name",
+        "entity.name",
         "support.type",
         "support.class",
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#99f",
-        // "fontStyle": "underline"
+        "foreground": "#0f9",
       }
     },
     {
