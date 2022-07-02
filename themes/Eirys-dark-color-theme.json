@@ -17,7 +17,7 @@
         // "fontStyle": "italic",
         // "foreground": "#008000"
         // "foreground": "#6A9955"
-        "foreground": "#090"
+        "foreground": "#0b0"
       }
     },
     {
@@ -152,24 +152,25 @@
     //         "foreground": "#e10000"
     //     }
     // },
-    // {
-    //   "name": "Regular Expressions",
-    //   "scope": [
-    //     "string.regexp"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#89DDFF"
-    //   }
-    // },
-    // {
-    //   "name": "Escape Characters",
-    //   "scope": [
-    //     "constant.character.escape"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#89DDFF"
-    //   }
-    // },
+    {
+      "name": "Regular Expression",
+      "scope": [
+        "string.regexp"
+      ],
+      "settings": {
+        "foreground": "#f66",
+        // "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Escape Character",
+      "scope": [
+        "constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#f3f"
+      }
+    },
     {
       "name": "Constant",
       "scope": [
