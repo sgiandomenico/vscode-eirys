@@ -1,0 +1,182 @@
+{
+  "name": "Eirys Dark",
+  "colors": {
+    "editor.background": "#000000",
+    "editor.foreground": "#fff",
+    "activityBarBadge.background": "#007acc",
+    "sideBarTitle.foreground": "#bbbbbb"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        // "fontStyle": "italic",
+        // "foreground": "#008000"
+        // "foreground": "#6A9955"
+        "foreground": "#090"
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": [
+        "invalid",
+        "invalid.illegal"
+      ],
+      "settings": {
+        "foreground": "#f00"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": [
+        "variable",
+        "string constant.other.placeholder"
+      ],
+      "settings": {
+        "foreground": "#ffa"
+      }
+    },
+    {
+      "name": "Control Flow Keyword",
+      "scope": [
+        "keyword.control",
+        "keyword.operator.logical",
+        "keyword.generator"
+      ],
+      "settings": {
+        "foreground": "#f7f"
+      }
+    },
+    {
+      "name": "Assignment",
+      "scope": [
+        "keyword.operator.assignment"
+      ],
+      "settings": {
+        "foreground": "#f0f"
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": [
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#96f"
+      }
+    },
+    {
+      "name": "Operator",
+      "scope": [
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#0ff"
+      }
+    },
+    {
+      "name": "Function, Special Method",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call",
+        "variable.function",
+        "support.function",
+        "keyword.other.special-method"
+      ],
+      "settings": {
+        "foreground": "#0ff"
+      }
+    },
+    {
+      "name": "Member",
+      "scope": [
+        "variable.other.member",
+        "variable.other.property",
+        "variable.other.object.member",
+        "variable.other.object.property",
+        "variable.object.property",
+        "meta.object-literal.key",
+        "support.variable.property"
+      ],
+      "settings": {
+        "foreground": "#39f"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": [
+        "constant.numeric",
+        // "keyword.other.unit",
+        // "keyword.other"
+      ],
+      "settings": {
+        "foreground": "#f96"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string",
+        // "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#f96"
+      }
+    },
+    {
+      "name": "Constant",
+      "scope": [
+        "constant",
+        // "variable.other.constant",
+        "variable.other.enummember",
+      ],
+      "settings": {
+        "foreground": "#f96",
+        // "fontStyle": "underline",
+      }
+    },
+    {
+      "name": "Const var",
+      "scope": [
+        "variable.other.constant",
+      ],
+      "settings": {
+        "foreground": "#fc0",
+        // "fontStyle": "underline"
+        // "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Class, Support",
+      "scope": [
+        // "entity.name",
+        "support.type",
+        "support.class",
+        "support.type.sys-types"
+      ],
+      "settings": {
+        "foreground": "#99f",
+      }
+    },
+  ],
+  "semanticTokenColors": {
+    "variable": {
+      "italic": true,
+      // "underline": true,
+    },
+    "variable.local": {
+      "italic": false,
+      // "underline": false,
+    },
+    "*.declaration": {
+      "underline": true,
+      // "italic": true,
+      // "bold": true,
+    },
+  }
+}
