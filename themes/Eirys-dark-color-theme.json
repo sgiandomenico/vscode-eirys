@@ -276,7 +276,8 @@
   ],
   "semanticTokenColors": {
     "variable": {
-      "italic": true, // Globals
+      // Globals.
+      "italic": true,
     },
     "variable.readonly": {
       // Global constants.
@@ -289,6 +290,9 @@
     "variable.local.readonly": {
       // Local constants.
       "foreground": "#ffa",
+    },
+    "variable.defaultLibrary": {
+        "foreground": "#fc0",
     },
   }
 }
