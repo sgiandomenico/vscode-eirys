@@ -1,9 +1,9 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Eirys Dark",
+  "name": "Eirys Light",
   "colors": {
-    "editor.background": "#000",
-    "editor.foreground": "#ccc",
+    "editor.background": "#fff",
+    "editor.foreground": "#333",
     "activityBarBadge.background": "#007acc",
     "sideBarTitle.foreground": "#bbbbbb"
   },
