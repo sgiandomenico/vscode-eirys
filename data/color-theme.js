@@ -284,6 +284,7 @@ const colorThemeData = {
       }
     },
   ],
+  "semanticHighlighting": true,
   "semanticTokenColors": {
     "variable": {
       // Globals.

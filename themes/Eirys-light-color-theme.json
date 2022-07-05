@@ -252,6 +252,7 @@
       }
     }
   ],
+  "semanticHighlighting": true,
   "semanticTokenColors": {
     "variable": {
       "italic": true
