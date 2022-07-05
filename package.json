@@ -12,15 +12,18 @@
     "contributes": {
         "themes": [
             {
-                "label": "Eirys",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Eirys-color-theme.json"
-            },
-            {
                 "label": "Eirys Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Eirys-dark-color-theme.json"
+            },
+            {
+                "label": "Eirys Light",
+                "uiTheme": "vs",
+                "path": "./themes/Eirys-light-color-theme.json"
             }
         ]
+    },
+    "scripts": {
+        "generate": "node src/generate_themes.js"
     }
 }
