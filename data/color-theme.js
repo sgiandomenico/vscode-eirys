@@ -76,7 +76,10 @@ const colorThemeData = {
         "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#f3f"
+        "foreground": {
+          "theme:light": "#06c",
+          "theme:dark": "#f3f",
+        }
       }
     },
     {
