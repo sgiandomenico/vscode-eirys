@@ -13,8 +13,8 @@ const colorThemeData = {
       "theme:light": "#333",
       "theme:dark": "#ccc",
     },
-    "activityBarBadge.background": "#007acc",
-    "sideBarTitle.foreground": "#bbbbbb"
+    // "activityBarBadge.background": "#007acc",
+    // "sideBarTitle.foreground": "#bbbbbb"
   },
   "tokenColors": [
     {

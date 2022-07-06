@@ -3,9 +3,7 @@
   "name": "Eirys Dark",
   "colors": {
     "editor.background": "#000",
-    "editor.foreground": "#ccc",
-    "activityBarBadge.background": "#007acc",
-    "sideBarTitle.foreground": "#bbbbbb"
+    "editor.foreground": "#ccc"
   },
   "tokenColors": [
     {

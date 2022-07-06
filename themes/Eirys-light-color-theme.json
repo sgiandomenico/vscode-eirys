@@ -3,9 +3,7 @@
   "name": "Eirys Light",
   "colors": {
     "editor.background": "#fff",
-    "editor.foreground": "#333",
-    "activityBarBadge.background": "#007acc",
-    "sideBarTitle.foreground": "#bbbbbb"
+    "editor.foreground": "#333"
   },
   "tokenColors": [
     {
