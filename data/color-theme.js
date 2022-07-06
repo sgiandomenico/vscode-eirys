@@ -353,6 +353,104 @@ const colorThemeData = {
         },
       }
     },
+    //-- Markdown --------------------------------------------------------------
+    {
+      "name": "Markdown - Plain",
+      "scope": [
+        "text.html.markdown",
+        "punctuation.definition.list_item.markdown"
+      ],
+      "settings": {
+        "foreground": {
+          "theme:light": "#000",
+          "theme:dark": "#fff",
+        }
+      }
+    },
+    {
+      "name": "Markdown - Raw Inline",
+      "scope": [
+        "text.html.markdown markup.inline.raw"
+      ],
+      "settings": {
+        // TODO
+        "foreground": {
+          "theme:light": "#c30",
+          "theme:dark": "#f96",
+        }
+      }
+    },
+    // {
+    //     "name": "Markdown - Markup Raw Inline",
+    //     "scope": [
+    //         "text.html.markdown markup.inline.raw.markdown"
+    //     ],
+    //     "settings": {
+    //         "foreground": "#C792EA"
+    //     }
+    // },
+    // {
+    //     "name": "Markdown - Markup Raw Inline Punctuation",
+    //     "scope": [
+    //         "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
+    //     ],
+    //     "settings": {
+    //         "foreground": "#65737E"
+    //     }
+    // },
+    // {
+    //   "name": "Markdown - Heading",
+    //   "scope": [
+    //     "markdown.heading",
+    //     "markup.heading | markup.heading entity.name",
+    //     "markup.heading.markdown punctuation.definition.heading.markdown"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#C3E88D"
+    //   }
+    // },
+    {
+      "name": "Markup - Italic",
+      "scope": [
+        "markup.italic"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+      }
+    },
+    {
+      "name": "Markup - Bold",
+      "scope": [
+        "markup.bold",
+        "markup.bold string"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+      }
+    },
+    {
+      "name": "Markup - Bold-Italic",
+      "scope": [
+        "markup.bold markup.italic",
+        "markup.italic markup.bold",
+        "markup.quote markup.bold",
+        "markup.bold markup.italic string",
+        "markup.italic markup.bold string",
+        "markup.quote markup.bold string"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+      }
+    },
+    // {
+    //   "name": "Markup - Underline",
+    //   "scope": [
+    //     "markup.underline"
+    //   ],
+    //   "settings": {
+    //     "fontStyle": "underline",
+    //   }
+    // },
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
