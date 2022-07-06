@@ -43,6 +43,7 @@ const colorThemeData = {
         "foreground": "#f00"
       }
     },
+    //-- Literals --------------------------------------------------------------
     {
       "name": "Number",
       "scope": [
@@ -131,6 +132,7 @@ const colorThemeData = {
         },
       }
     },
+    //-- Operations ------------------------------------------------------------
     {
       "name": "Control Flow Keyword",
       "scope": [
@@ -298,6 +300,7 @@ const colorThemeData = {
         },
       }
     },
+    //-- HTML ------------------------------------------------------------------
     {
       "name": "HTML Attributes",
       "scope": [
@@ -313,6 +316,7 @@ const colorThemeData = {
         },
       }
     },
+    //-- CSS -------------------------------------------------------------------
     {
       "name": "CSS Classes",
       "scope": [
