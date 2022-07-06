@@ -10,7 +10,7 @@ const colorThemeData = {
       "theme:dark": "#000",
     },
     "editor.foreground": {
-      "theme:light": "#333",
+      "theme:light": "#666",
       "theme:dark": "#ccc",
     },
     // "activityBarBadge.background": "#007acc",
@@ -27,7 +27,10 @@ const colorThemeData = {
         "fontStyle": "italic",
         // "foreground": "#008000"
         // "foreground": "#6A9955"
-        "foreground": "#0b0"
+        "foreground": {
+          "theme:light": "#080",
+          "theme:dark": "#0b0",
+        }
       }
     },
     {
@@ -48,7 +51,10 @@ const colorThemeData = {
         // "keyword.other"
       ],
       "settings": {
-        "foreground": "#f96"
+        "foreground": {
+          "theme:light": "#c30",
+          "theme:dark": "#f96",
+        }
       }
     },
     {
@@ -58,7 +64,10 @@ const colorThemeData = {
         // "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#f96"
+        "foreground": {
+          "theme:light": "#c30",
+          "theme:dark": "#f96",
+        }
       }
     },
     {
@@ -76,7 +85,10 @@ const colorThemeData = {
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#f66",
+        "foreground": {
+          "theme:light": "#c00",
+          "theme:dark": "#f66",
+        },
         // "fontStyle": "underline"
       }
     },
@@ -97,8 +109,11 @@ const colorThemeData = {
         "support.constant",
       ],
       "settings": {
-        "foreground": "#f96",
-        // "foreground": "#ff3",
+        "foreground": {
+          "theme:light": "#c30",
+          "theme:dark": "#f96",
+          // "theme:dark":"#ff3",
+        },
       }
     },
     {
@@ -107,7 +122,10 @@ const colorThemeData = {
         "variable.language.this",
       ],
       "settings": {
-        "foreground": "#ff3",
+        "foreground": {
+          "theme:light": "#990",
+          "theme:dark": "#ff3",
+        },
       }
     },
     {
@@ -118,7 +136,10 @@ const colorThemeData = {
         "keyword.generator"
       ],
       "settings": {
-        "foreground": "#f8f"
+        "foreground": {
+          "theme:light": "#a3a",
+          "theme:dark": "#f8f",
+        },
       }
     },
     {
@@ -128,7 +149,10 @@ const colorThemeData = {
         "punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "#f0f",
+        "foreground": {
+          "theme:light": "#a0a",
+          "theme:dark": "#f0f",
+        },
         "fontStyle": "", // Prevent spillover from declaration formatting.
       }
     },
@@ -149,7 +173,10 @@ const colorThemeData = {
         "keyword.operator"
       ],
       "settings": {
-        "foreground": "#0ff"
+        "foreground": {
+          "theme:light": "#088",
+          "theme:dark": "#0ff",
+        },
       }
     },
     {
@@ -162,7 +189,10 @@ const colorThemeData = {
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#6ff"
+        "foreground": {
+          "theme:light": "#088",
+          "theme:dark": "#6ff",
+        }
       }
     },
     {
@@ -178,7 +208,10 @@ const colorThemeData = {
         "support.type.property-name",
       ],
       "settings": {
-        "foreground": "#5bf"
+        "foreground": {
+          "theme:light": "#04a",
+          "theme:dark": "#5bf",
+        }
       }
     },
     {
@@ -188,7 +221,10 @@ const colorThemeData = {
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#fff"
+        "foreground": {
+          "theme:light": "#000",
+          "theme:dark": "#fff",
+        }
       }
     },
     {
@@ -198,7 +234,10 @@ const colorThemeData = {
         "variable.other.enummember",
       ],
       "settings": {
-        "foreground": "#fc0",
+        "foreground": {
+          "theme:light": "#a80",
+          "theme:dark": "#fc0",
+        }
       }
     },
     {
@@ -207,7 +246,10 @@ const colorThemeData = {
         "meta.block variable.other.constant",
       ],
       "settings": {
-        "foreground": "#ffa",
+        "foreground": {
+          "theme:light": "#740",
+          "theme:dark": "#ffa",
+        },
       }
     },
     {
@@ -217,7 +259,10 @@ const colorThemeData = {
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#96f"
+        "foreground": {
+          "theme:light": "#41a",
+          "theme:dark": "#96f",
+        },
       }
     },
     {
@@ -229,7 +274,10 @@ const colorThemeData = {
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#0f9",
+        "foreground": {
+          "theme:light": "#093",
+          "theme:dark": "#0f9",
+        },
       }
     },
     {
@@ -241,7 +289,10 @@ const colorThemeData = {
       ],
       "settings": {
         // "foreground": "#f8f"
-        "foreground": "#96f"
+        "foreground": {
+          "theme:light": "#60c",
+          "theme:dark": "#96f",
+        },
       }
     },
     {
@@ -252,8 +303,11 @@ const colorThemeData = {
       "settings": {
         // "foreground": "#fc6"
         // "foreground": "#39f"
-        "foreground": "#6cf"
         // "foreground": "#ffa"
+        "foreground": {
+          "theme:light": "#17a",
+          "theme:dark": "#6cf",
+        },
       }
     },
     {
@@ -262,7 +316,10 @@ const colorThemeData = {
         "entity.other.attribute-name.class"
       ],
       "settings": {
-        "foreground": "#6ff"
+        "foreground": {
+          "theme:light": "#088",
+          "theme:dark": "#6ff",
+        }
       }
     },
     {
@@ -271,7 +328,10 @@ const colorThemeData = {
         "entity.other.attribute-name.id"
       ],
       "settings": {
-        "foreground": "#ffa"
+        "foreground": {
+          "theme:light": "#740",
+          "theme:dark": "#ffa",
+        },
       }
     },
     {
@@ -280,7 +340,10 @@ const colorThemeData = {
         "entity.other.attribute-name.pseudo-element"
       ],
       "settings": {
-        "foreground": "#fc0"
+        "foreground": {
+          "theme:light": "#a80",
+          "theme:dark": "#fc0",
+        },
       }
     },
   ],
@@ -292,7 +355,10 @@ const colorThemeData = {
     },
     "variable.readonly": {
       // Global constants.
-      "foreground": "#fc0",
+      "foreground": {
+        "theme:light": "#a80",
+        "theme:dark": "#fc0",
+      },
     },
     "variable.local": {
       // Local variables.
@@ -300,10 +366,16 @@ const colorThemeData = {
     },
     "variable.local.readonly": {
       // Local constants.
-      "foreground": "#ffa",
+      "foreground": {
+        "theme:light": "#740",
+        "theme:dark": "#ffa",
+      },
     },
     "variable.defaultLibrary": {
-      "foreground": "#fc0",
+      "foreground": {
+        "theme:light": "#a80",
+        "theme:dark": "#fc0",
+      },
     },
   }
 };

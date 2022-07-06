@@ -3,7 +3,7 @@
   "name": "Eirys Light",
   "colors": {
     "editor.background": "#fff",
-    "editor.foreground": "#333"
+    "editor.foreground": "#666"
   },
   "tokenColors": [
     {
@@ -14,7 +14,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#0b0"
+        "foreground": "#080"
       }
     },
     {
@@ -33,7 +33,7 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#f96"
+        "foreground": "#c30"
       }
     },
     {
@@ -42,7 +42,7 @@
         "string"
       ],
       "settings": {
-        "foreground": "#f96"
+        "foreground": "#c30"
       }
     },
     {
@@ -60,7 +60,7 @@
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#f66"
+        "foreground": "#c00"
       }
     },
     {
@@ -70,7 +70,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#f96"
+        "foreground": "#c30"
       }
     },
     {
@@ -79,7 +79,7 @@
         "variable.language.this"
       ],
       "settings": {
-        "foreground": "#ff3"
+        "foreground": "#990"
       }
     },
     {
@@ -90,7 +90,7 @@
         "keyword.generator"
       ],
       "settings": {
-        "foreground": "#f8f"
+        "foreground": "#a3a"
       }
     },
     {
@@ -100,7 +100,7 @@
         "punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "#f0f",
+        "foreground": "#a0a",
         "fontStyle": ""
       }
     },
@@ -121,7 +121,7 @@
         "keyword.operator"
       ],
       "settings": {
-        "foreground": "#0ff"
+        "foreground": "#088"
       }
     },
     {
@@ -134,7 +134,7 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#6ff"
+        "foreground": "#088"
       }
     },
     {
@@ -150,7 +150,7 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#5bf"
+        "foreground": "#04a"
       }
     },
     {
@@ -160,7 +160,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#fff"
+        "foreground": "#000"
       }
     },
     {
@@ -170,7 +170,7 @@
         "variable.other.enummember"
       ],
       "settings": {
-        "foreground": "#fc0"
+        "foreground": "#a80"
       }
     },
     {
@@ -179,7 +179,7 @@
         "meta.block variable.other.constant"
       ],
       "settings": {
-        "foreground": "#ffa"
+        "foreground": "#740"
       }
     },
     {
@@ -189,7 +189,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#96f"
+        "foreground": "#41a"
       }
     },
     {
@@ -201,7 +201,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#0f9"
+        "foreground": "#093"
       }
     },
     {
@@ -210,7 +210,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#96f"
+        "foreground": "#60c"
       }
     },
     {
@@ -219,7 +219,7 @@
         "text.html entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#6cf"
+        "foreground": "#17a"
       }
     },
     {
@@ -228,7 +228,7 @@
         "entity.other.attribute-name.class"
       ],
       "settings": {
-        "foreground": "#6ff"
+        "foreground": "#088"
       }
     },
     {
@@ -237,7 +237,7 @@
         "entity.other.attribute-name.id"
       ],
       "settings": {
-        "foreground": "#ffa"
+        "foreground": "#740"
       }
     },
     {
@@ -246,7 +246,7 @@
         "entity.other.attribute-name.pseudo-element"
       ],
       "settings": {
-        "foreground": "#fc0"
+        "foreground": "#a80"
       }
     }
   ],
@@ -256,16 +256,16 @@
       "italic": true
     },
     "variable.readonly": {
-      "foreground": "#fc0"
+      "foreground": "#a80"
     },
     "variable.local": {
       "italic": false
     },
     "variable.local.readonly": {
-      "foreground": "#ffa"
+      "foreground": "#740"
     },
     "variable.defaultLibrary": {
-      "foreground": "#fc0"
+      "foreground": "#a80"
     }
   }
 }
