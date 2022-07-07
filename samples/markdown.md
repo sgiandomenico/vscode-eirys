@@ -10,4 +10,14 @@ Lorem ipsum dolor sit amet.
 * http://example.com
 * [link](http://example.com)
 
+```
+Unspecified raw block
+```
+
+```javascript
+function javascript() {
+  if (true) doStuff();
+}
+```
+
 ### Heading 3
