@@ -3,9 +3,18 @@
   "name": "Eirys Light",
   "colors": {
     "editor.background": "#fff",
-    "editor.foreground": "#666"
+    "editor.foreground": "#000"
   },
   "tokenColors": [
+    {
+      "name": "Source Default",
+      "scope": [
+        "source"
+      ],
+      "settings": {
+        "foreground": "#666"
+      }
+    },
     {
       "name": "Comment",
       "scope": [

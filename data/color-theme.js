@@ -10,13 +10,26 @@ const colorThemeData = {
       "theme:dark": "#000",
     },
     "editor.foreground": {
-      "theme:light": "#666",
-      "theme:dark": "#ccc",
+      "theme:light": "#000",
+      "theme:dark": "#fff",
     },
     // "activityBarBadge.background": "#007acc",
     // "sideBarTitle.foreground": "#bbbbbb"
   },
   "tokenColors": [
+    {
+      "name": "Source Default",
+      // Note: this includes all unstyled elements, such as punctuation.
+      "scope": [
+        "source"
+      ],
+      "settings": {
+        "foreground": {
+          "theme:light": "#666",
+          "theme:dark": "#ccc",
+        }
+      }
+    },
     {
       "name": "Comment",
       "scope": [

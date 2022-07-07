@@ -3,9 +3,18 @@
   "name": "Eirys Dark",
   "colors": {
     "editor.background": "#000",
-    "editor.foreground": "#ccc"
+    "editor.foreground": "#fff"
   },
   "tokenColors": [
+    {
+      "name": "Source Default",
+      "scope": [
+        "source"
+      ],
+      "settings": {
+        "foreground": "#ccc"
+      }
+    },
     {
       "name": "Comment",
       "scope": [
