@@ -48,7 +48,8 @@
     {
       "name": "String",
       "scope": [
-        "string"
+        "string",
+        "meta.object-literal.key meta string"
       ],
       "settings": {
         "foreground": "#f96"
@@ -155,6 +156,7 @@
         "variable.other.object.property",
         "variable.object.property",
         "meta.object-literal.key",
+        "meta.object-literal.key string",
         "support.variable.property",
         "support.type.property-name"
       ],

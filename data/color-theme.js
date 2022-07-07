@@ -75,6 +75,7 @@ const colorThemeData = {
       "name": "String",
       "scope": [
         "string",
+        "meta.object-literal.key meta string", // String used in a computed key.
         // "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
@@ -222,6 +223,12 @@ const colorThemeData = {
         "variable.other.object.property",
         "variable.object.property",
         "meta.object-literal.key",
+        // String used as a key.  Note: ideally we want to include only strings
+        // that are directly used as keys, not those used in computed keys.
+        // However, VS Code doesn't seem to currently support the selector
+        // composition required to implement that here -- so instead we override
+        // this in the String rule, which hopefully covers most situations.
+        "meta.object-literal.key string",
         "support.variable.property",
         "support.type.property-name",
       ],
