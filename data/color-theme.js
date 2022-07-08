@@ -17,6 +17,7 @@ const colorThemeData = {
     // "sideBarTitle.foreground": "#bbbbbb"
   },
   "tokenColors": [
+    //#region -- Root Syntax ---------------------------------------------------
     {
       "name": "Source Default",
       // Note: this includes all unstyled elements, such as punctuation.
@@ -56,7 +57,8 @@ const colorThemeData = {
         "foreground": "#f00"
       }
     },
-    //-- Literals --------------------------------------------------------------
+    //#endregion
+    //#region -- Literals ------------------------------------------------------
     {
       "name": "Number",
       "scope": [
@@ -146,7 +148,8 @@ const colorThemeData = {
         },
       }
     },
-    //-- Operations ------------------------------------------------------------
+    //#endregion
+    //#region -- Operations ----------------------------------------------------
     {
       "name": "Control Flow Keyword",
       "scope": [
@@ -214,6 +217,8 @@ const colorThemeData = {
         }
       }
     },
+    //#endregion
+    //#region -- Variables -----------------------------------------------------
     {
       "name": "Member",
       "scope": [
@@ -305,6 +310,7 @@ const colorThemeData = {
         },
       }
     },
+    //#endregion
     {
       "name": "Tag",
       "scope": [
@@ -320,7 +326,7 @@ const colorThemeData = {
         },
       }
     },
-    //-- HTML ------------------------------------------------------------------
+    //#region -- HTML ----------------------------------------------------------
     {
       "name": "HTML Attributes",
       "scope": [
@@ -336,7 +342,8 @@ const colorThemeData = {
         },
       }
     },
-    //-- CSS -------------------------------------------------------------------
+    //#endregion
+    //#region -- CSS -----------------------------------------------------------
     {
       "name": "CSS Classes",
       "scope": [
@@ -373,7 +380,8 @@ const colorThemeData = {
         },
       }
     },
-    //-- Markdown --------------------------------------------------------------
+    //#endregion
+    //#region -- Markdown ------------------------------------------------------
     {
       "name": "Markdown - Plain",
       "scope": [
@@ -471,9 +479,11 @@ const colorThemeData = {
     //     "fontStyle": "underline",
     //   }
     // },
+    //#endregion
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
+    //#region -- Variables -----------------------------------------------------
     "variable": {
       // Globals.
       "italic": true,
@@ -502,6 +512,7 @@ const colorThemeData = {
         "theme:dark": "#fc0",
       },
     },
+    //#endregion
   }
 };
 
