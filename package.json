@@ -1,6 +1,9 @@
 {
     "name": "eirys",
     "displayName": "Eirys",
+    "author": {
+        "name": "Stephen Giandomenico"
+    },
     "description": "Personal color theme",
     "version": "0.0.1",
     "engines": {
