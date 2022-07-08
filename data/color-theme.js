@@ -148,6 +148,18 @@ const colorThemeData = {
         },
       }
     },
+    {
+      "name": "Color",
+      "scope": [
+        "constant.other.color"
+      ],
+      "settings": {
+        "foreground": {
+          "theme:light": "#c30",
+          "theme:dark": "#f96",
+        },
+      }
+    },
     //#endregion
     //#region -- Operations ----------------------------------------------------
     {

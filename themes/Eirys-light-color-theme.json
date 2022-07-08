@@ -93,6 +93,15 @@
       }
     },
     {
+      "name": "Color",
+      "scope": [
+        "constant.other.color"
+      ],
+      "settings": {
+        "foreground": "#c30"
+      }
+    },
+    {
       "name": "Control Flow Keyword",
       "scope": [
         "keyword.control",
