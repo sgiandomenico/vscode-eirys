@@ -5,10 +5,16 @@ const fs = require('fs');
 
 const EXPORT_DIR = 'themes';
 
+function isThemed(obj) {
+  if (obj == null || typeof obj !== 'object') return false;
+  for (const key in obj) return key.startsWith('theme:');
+  return false;
+}
+
 function themeSelector(themeId) {
+  const themeKey = `theme:${themeId}`;
   return function (key, value) {
-    const target = value[`theme:${themeId}`];
-    return target == undefined ? value : target;
+    return isThemed(value) ? value[themeKey] : value;
   }
 }
 
