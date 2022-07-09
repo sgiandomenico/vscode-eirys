@@ -1,4 +1,7 @@
-const colorThemeData = {
+
+export const themes = ['light', 'dark'];
+
+export const colorThemeData = {
   "$schema": "vscode://schemas/color-theme",
   "name": {
     "theme:light": "Eirys Light",
@@ -530,6 +533,3 @@ const colorThemeData = {
     //#endregion
   }
 };
-
-exports.themes = ['light', 'dark'];
-exports.colorThemeData = colorThemeData;

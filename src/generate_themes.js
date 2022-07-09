@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-
-const { themes, colorThemeData } = require('../data/color-theme');
-const fs = require('fs');
+import fs from 'fs';
+import { colorThemeData, themes } from '../data/color-theme.js';
 
 const EXPORT_DIR = 'themes';
 
