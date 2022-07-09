@@ -301,12 +301,12 @@ const colorThemeData = {
         "storage.modifier"
       ],
       "settings": {
-        "foreground": {
-          "theme:light": "#41a",
-          "theme:dark": "#96f",
+        "theme:light": {
+          "foreground": "#41a",
         },
-        "fontStyle": {
-          "theme:dark": "bold", // Compensate for reduced contrast.
+        "theme:dark": {
+          "foreground": "#96f",
+          "fontStyle": "bold", // Compensate for reduced contrast.
         },
       }
     },
