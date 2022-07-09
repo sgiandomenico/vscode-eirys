@@ -305,6 +305,9 @@ const colorThemeData = {
           "theme:light": "#41a",
           "theme:dark": "#96f",
         },
+        "fontStyle": {
+          "theme:dark": "bold", // Compensate for reduced contrast.
+        },
       }
     },
     {

@@ -209,7 +209,8 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#96f"
+        "foreground": "#96f",
+        "fontStyle": "bold"
       }
     },
     {
