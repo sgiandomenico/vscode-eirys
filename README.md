@@ -1,13 +1,11 @@
-# README
-## This is the README for your extension "eirys"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Eirys Color Theme
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+## Raison d'être
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Why have syntax coloring at all?  We identify three general categories:
 
-**Enjoy!**
+* To facilitate understanding code.
+* To call attention to subtle errors/bugs.
+* ~~To make code look pretty.~~
+
+For this color theme, we choose to focus on the first two points (and hope the third comes as a byproduct of the others).  In particular, we seek to use highlighting to encode semantic information about the highlighted features, not readily observable from the immediate usage and surrounding code.
