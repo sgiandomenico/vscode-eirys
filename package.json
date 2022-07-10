@@ -28,6 +28,11 @@
         ]
     },
     "scripts": {
-        "generate": "node src/generate_themes.js"
+        "generate": "node src/generate_themes.js",
+        "test:unit": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+    },
+    "devDependencies": {
+        "@types/jest": "^28.1.4",
+        "jest": "^28.1.2"
     }
 }
