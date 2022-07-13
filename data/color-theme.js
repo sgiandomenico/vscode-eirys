@@ -485,7 +485,16 @@ export const colorThemeData = {
         "markup.quote markup.bold string"
       ],
       "settings": {
-        "fontStyle": "bold",
+        "fontStyle": "bold italic",
+      }
+    },
+    {
+      "name": "Markup - Strikethrough",
+      "scope": [
+        "markup.strikethrough",
+      ],
+      "settings": {
+        "fontStyle": "strikethrough",
       }
     },
     // {
