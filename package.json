@@ -33,6 +33,11 @@
     },
     "devDependencies": {
         "@types/jest": "^28.1.4",
-        "jest": "^28.1.2"
+        "jest": "^28.1.2",
+        "prettier": "^2.7.1"
+    },
+    "prettier": {
+        "semi": true,
+        "arrowParens": "avoid"
     }
 }

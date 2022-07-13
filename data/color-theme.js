@@ -1,13 +1,13 @@
 
-export const themes = ['light', 'dark'];
+export const themes = ["light", "dark"];
 
 export const colorThemeData = {
-  "$schema": "vscode://schemas/color-theme",
-  "name": {
+  $schema: "vscode://schemas/color-theme",
+  name: {
     "theme:light": "Eirys Light",
     "theme:dark": "Eirys Dark",
   },
-  "colors": {
+  colors: {
     "editor.background": {
       "theme:light": "#fff",
       "theme:dark": "#000",
@@ -19,101 +19,89 @@ export const colorThemeData = {
     // "activityBarBadge.background": "#007acc",
     // "sideBarTitle.foreground": "#bbbbbb"
   },
-  "tokenColors": [
+  tokenColors: [
     //#region -- Root Syntax ---------------------------------------------------
     {
-      "name": "Source Default",
+      name: "Source Default",
       // Note: this includes all unstyled elements, such as punctuation.
-      "scope": [
-        "source"
-      ],
-      "settings": {
-        "foreground": {
+      scope: ["source"],
+      settings: {
+        foreground: {
           "theme:light": "#666",
           "theme:dark": "#ccc",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Comment",
-      "scope": [
-        "comment",
-        "punctuation.definition.comment"
-      ],
-      "settings": {
-        "fontStyle": "italic",
+      name: "Comment",
+      scope: ["comment", "punctuation.definition.comment"],
+      settings: {
+        fontStyle: "italic",
         // "foreground": "#008000"
         // "foreground": "#6A9955"
-        "foreground": {
+        foreground: {
           "theme:light": "#080",
           "theme:dark": "#0b0",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Invalid",
-      "scope": [
-        "invalid",
-        "invalid.illegal"
-      ],
-      "settings": {
-        "foreground": "#f00"
-      }
+      name: "Invalid",
+      scope: ["invalid", "invalid.illegal"],
+      settings: {
+        foreground: "#f00",
+      },
     },
     //#endregion
     //#region -- Literals ------------------------------------------------------
     {
-      "name": "Number",
-      "scope": [
+      name: "Number",
+      scope: [
         "constant.numeric",
         // "keyword.other.unit",
         // "keyword.other"
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#c30",
           "theme:dark": "#f96",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "String",
-      "scope": [
+      name: "String",
+      scope: [
         "string",
         "meta.object-literal.key meta string", // String used in a computed key.
         // "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#c30",
           "theme:dark": "#f96",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Escape Character",
-      "scope": [
-        "constant.character.escape"
-      ],
-      "settings": {
-        "foreground": {
+      name: "Escape Character",
+      scope: ["constant.character.escape"],
+      settings: {
+        foreground: {
           "theme:light": "#06c",
           "theme:dark": "#f3f",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Regular Expression",
-      "scope": [
-        "string.regexp"
-      ],
-      "settings": {
-        "foreground": {
+      name: "Regular Expression",
+      scope: ["string.regexp"],
+      settings: {
+        foreground: {
           "theme:light": "#c00",
           "theme:dark": "#f66",
         },
         // "fontStyle": "underline"
-      }
+      },
     },
     // {
     //     "name": "Symbol",
@@ -126,117 +114,105 @@ export const colorThemeData = {
     //     }
     // },
     {
-      "name": "Language Constant",
-      "scope": [
-        "constant.language",
-        "support.constant",
-      ],
-      "settings": {
-        "foreground": {
+      name: "Language Constant",
+      scope: ["constant.language", "support.constant"],
+      settings: {
+        foreground: {
           "theme:light": "#c30",
           "theme:dark": "#f96",
           // "theme:dark":"#ff3",
         },
-      }
+      },
     },
     {
-      "name": "this",
-      "scope": [
-        "variable.language.this",
-      ],
-      "settings": {
-        "foreground": {
+      name: "this",
+      scope: ["variable.language.this"],
+      settings: {
+        foreground: {
           "theme:light": "#990",
           "theme:dark": "#ff3",
         },
-      }
+      },
     },
     {
-      "name": "Color",
-      "scope": [
-        "constant.other.color"
-      ],
-      "settings": {
-        "foreground": {
+      name: "Color",
+      scope: ["constant.other.color"],
+      settings: {
+        foreground: {
           "theme:light": "#c30",
           "theme:dark": "#f96",
         },
-      }
+      },
     },
     //#endregion
     //#region -- Operations ----------------------------------------------------
     {
-      "name": "Control Flow Keyword",
-      "scope": [
+      name: "Control Flow Keyword",
+      scope: [
         "keyword.control",
         "keyword.operator.logical",
-        "keyword.generator"
+        "keyword.generator",
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#a3a",
           "theme:dark": "#f8f",
         },
-      }
+      },
     },
     {
-      "name": "Assignment",
-      "scope": [
-        "keyword.operator.assignment",
-        "punctuation.separator.key-value"
-      ],
-      "settings": {
-        "foreground": {
+      name: "Assignment",
+      scope: ["keyword.operator.assignment", "punctuation.separator.key-value"],
+      settings: {
+        foreground: {
           "theme:light": "#a0a",
           "theme:dark": "#f0f",
         },
-        "fontStyle": "", // Prevent spillover from declaration formatting.
-      }
+        fontStyle: "", // Prevent spillover from declaration formatting.
+      },
     },
     {
-      "name": "Declaration",
-      "scope": [
+      name: "Declaration",
+      scope: [
         "meta.definition",
         "meta.parameters variable.parameter",
         "meta.object-literal.key",
       ],
-      "settings": {
-        "fontStyle": "underline"
-      }
+      settings: {
+        fontStyle: "underline",
+      },
     },
     {
-      "name": "Operator",
-      "scope": [
-        "keyword.operator"
-      ],
-      "settings": {
-        "foreground": {
+      name: "Operator",
+      scope: ["keyword.operator"],
+      settings: {
+        foreground: {
           "theme:light": "#088",
           "theme:dark": "#0ff",
         },
-      }
+      },
     },
     {
-      "name": "Function",
-      "scope": [
+      name: "Function",
+      scope: [
         "entity.name.function",
         "meta.function-call",
         "variable.function",
         "support.function",
-        "keyword.other.special-method"
+        "keyword.other.special-method",
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#088",
           "theme:dark": "#6ff",
-        }
-      }
+        },
+      },
     },
     //#endregion
     //#region -- Variables -----------------------------------------------------
     {
-      "name": "Member",
-      "scope": [
+      name: "Member",
+      scope: [
         "variable.other.member",
         "variable.other.property",
         "variable.other.object.member",
@@ -252,179 +228,158 @@ export const colorThemeData = {
         "support.variable.property",
         "support.type.property-name",
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#04a",
           "theme:dark": "#5bf",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Variable",
-      "scope": [
-        "variable",
-        "string constant.other.placeholder"
-      ],
-      "settings": {
-        "foreground": {
+      name: "Variable",
+      scope: ["variable", "string constant.other.placeholder"],
+      settings: {
+        foreground: {
           "theme:light": "#000",
           "theme:dark": "#fff",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Constant Variable (Global/Default)",
-      "scope": [
-        "variable.other.constant",
-        "variable.other.enummember",
-      ],
-      "settings": {
-        "foreground": {
+      name: "Constant Variable (Global/Default)",
+      scope: ["variable.other.constant", "variable.other.enummember"],
+      settings: {
+        foreground: {
           "theme:light": "#a80",
           "theme:dark": "#fc0",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Local const Variable",
-      "scope": [
-        "meta.block variable.other.constant",
-      ],
-      "settings": {
-        "foreground": {
+      name: "Local const Variable",
+      scope: ["meta.block variable.other.constant"],
+      settings: {
+        foreground: {
           "theme:light": "#740",
           "theme:dark": "#ffa",
         },
-      }
+      },
     },
     {
-      "name": "Storage",
-      "scope": [
-        "storage.type",
-        "storage.modifier"
-      ],
-      "settings": {
+      name: "Storage",
+      scope: ["storage.type", "storage.modifier"],
+      settings: {
         "theme:light": {
-          "foreground": "#41a",
+          foreground: "#41a",
         },
         "theme:dark": {
-          "foreground": "#96f",
-          "fontStyle": "bold", // Compensate for reduced contrast.
+          foreground: "#96f",
+          fontStyle: "bold", // Compensate for reduced contrast.
         },
-      }
+      },
     },
     {
-      "name": "Class, Support",
-      "scope": [
+      name: "Class, Support",
+      scope: [
         "entity.name",
         "support.type",
         "support.class",
-        "support.type.sys-types"
+        "support.type.sys-types",
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#093",
           "theme:dark": "#0f9",
         },
-      }
+      },
     },
     //#endregion
     {
-      "name": "Tag",
-      "scope": [
+      name: "Tag",
+      scope: [
         "entity.name.tag",
         // "meta.tag.sgml",
         // "markup.deleted.git_gutter"
       ],
-      "settings": {
+      settings: {
         // "foreground": "#f8f"
-        "foreground": {
+        foreground: {
           "theme:light": "#60c",
           "theme:dark": "#96f",
         },
-      }
+      },
     },
     //#region -- HTML ----------------------------------------------------------
     {
-      "name": "HTML Attributes",
-      "scope": [
-        "text.html entity.other.attribute-name"
-      ],
-      "settings": {
+      name: "HTML Attributes",
+      scope: ["text.html entity.other.attribute-name"],
+      settings: {
         // "foreground": "#fc6"
         // "foreground": "#39f"
         // "foreground": "#ffa"
-        "foreground": {
+        foreground: {
           "theme:light": "#17a",
           "theme:dark": "#6cf",
         },
-      }
+      },
     },
     //#endregion
     //#region -- CSS -----------------------------------------------------------
     {
-      "name": "CSS Classes",
-      "scope": [
-        "entity.other.attribute-name.class"
-      ],
-      "settings": {
-        "foreground": {
+      name: "CSS Classes",
+      scope: ["entity.other.attribute-name.class"],
+      settings: {
+        foreground: {
           "theme:light": "#088",
           "theme:dark": "#6ff",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "CSS IDs",
-      "scope": [
-        "entity.other.attribute-name.id"
-      ],
-      "settings": {
-        "foreground": {
+      name: "CSS IDs",
+      scope: ["entity.other.attribute-name.id"],
+      settings: {
+        foreground: {
           "theme:light": "#740",
           "theme:dark": "#ffa",
         },
-      }
+      },
     },
     {
-      "name": "CSS Pseudo Element",
-      "scope": [
-        "entity.other.attribute-name.pseudo-element"
-      ],
-      "settings": {
-        "foreground": {
+      name: "CSS Pseudo Element",
+      scope: ["entity.other.attribute-name.pseudo-element"],
+      settings: {
+        foreground: {
           "theme:light": "#a80",
           "theme:dark": "#fc0",
         },
-      }
+      },
     },
     //#endregion
     //#region -- Markdown ------------------------------------------------------
     {
-      "name": "Markdown - Plain",
-      "scope": [
+      name: "Markdown - Plain",
+      scope: [
         "text.html.markdown",
-        "punctuation.definition.list_item.markdown"
+        "punctuation.definition.list_item.markdown",
       ],
-      "settings": {
-        "foreground": {
+      settings: {
+        foreground: {
           "theme:light": "#000",
           "theme:dark": "#fff",
-        }
-      }
+        },
+      },
     },
     {
-      "name": "Markdown - Raw Inline",
-      "scope": [
-        "text.html.markdown markup.inline.raw"
-      ],
-      "settings": {
+      name: "Markdown - Raw Inline",
+      scope: ["text.html.markdown markup.inline.raw"],
+      settings: {
         // TODO
-        "foreground": {
+        foreground: {
           "theme:light": "#c30",
           "theme:dark": "#f96",
-        }
-      }
+        },
+      },
     },
     // {
     //     "name": "Markdown - Markup Raw Inline",
@@ -456,46 +411,39 @@ export const colorThemeData = {
     //   }
     // },
     {
-      "name": "Markup - Italic",
-      "scope": [
-        "markup.italic"
-      ],
-      "settings": {
-        "fontStyle": "italic",
-      }
+      name: "Markup - Italic",
+      scope: ["markup.italic"],
+      settings: {
+        fontStyle: "italic",
+      },
     },
     {
-      "name": "Markup - Bold",
-      "scope": [
-        "markup.bold",
-        "markup.bold string"
-      ],
-      "settings": {
-        "fontStyle": "bold",
-      }
+      name: "Markup - Bold",
+      scope: ["markup.bold", "markup.bold string"],
+      settings: {
+        fontStyle: "bold",
+      },
     },
     {
-      "name": "Markup - Bold-Italic",
-      "scope": [
+      name: "Markup - Bold-Italic",
+      scope: [
         "markup.bold markup.italic",
         "markup.italic markup.bold",
         "markup.quote markup.bold",
         "markup.bold markup.italic string",
         "markup.italic markup.bold string",
-        "markup.quote markup.bold string"
+        "markup.quote markup.bold string",
       ],
-      "settings": {
-        "fontStyle": "bold italic",
-      }
+      settings: {
+        fontStyle: "bold italic",
+      },
     },
     {
-      "name": "Markup - Strikethrough",
-      "scope": [
-        "markup.strikethrough",
-      ],
-      "settings": {
-        "fontStyle": "strikethrough",
-      }
+      name: "Markup - Strikethrough",
+      scope: ["markup.strikethrough"],
+      settings: {
+        fontStyle: "strikethrough",
+      },
     },
     // {
     //   "name": "Markup - Underline",
@@ -508,37 +456,37 @@ export const colorThemeData = {
     // },
     //#endregion
   ],
-  "semanticHighlighting": true,
-  "semanticTokenColors": {
+  semanticHighlighting: true,
+  semanticTokenColors: {
     //#region -- Variables -----------------------------------------------------
-    "variable": {
+    variable: {
       // Globals.
-      "italic": true,
+      italic: true,
     },
     "variable.readonly": {
       // Global constants.
-      "foreground": {
+      foreground: {
         "theme:light": "#a80",
         "theme:dark": "#fc0",
       },
     },
     "variable.local": {
       // Local variables.
-      "italic": false,
+      italic: false,
     },
     "variable.local.readonly": {
       // Local constants.
-      "foreground": {
+      foreground: {
         "theme:light": "#740",
         "theme:dark": "#ffa",
       },
     },
     "variable.defaultLibrary": {
-      "foreground": {
+      foreground: {
         "theme:light": "#a80",
         "theme:dark": "#fc0",
       },
     },
     //#endregion
-  }
+  },
 };
