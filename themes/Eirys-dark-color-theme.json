@@ -312,11 +312,7 @@
       "name": "Markup - Bold-Italic",
       "scope": [
         "markup.bold markup.italic",
-        "markup.italic markup.bold",
-        "markup.quote markup.bold",
-        "markup.bold markup.italic string",
-        "markup.italic markup.bold string",
-        "markup.quote markup.bold string"
+        "markup.italic markup.bold"
       ],
       "settings": {
         "fontStyle": "bold italic"
@@ -329,6 +325,40 @@
       ],
       "settings": {
         "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "name": "Markup - Italic-Strikethrough",
+      "scope": [
+        "markup.italic markup.strikethrough",
+        "markup.strikethrough markup.italic"
+      ],
+      "settings": {
+        "fontStyle": "italic strikethrough"
+      }
+    },
+    {
+      "name": "Markup - Bold-Strikethrough",
+      "scope": [
+        "markup.bold markup.strikethrough",
+        "markup.strikethrough markup.bold"
+      ],
+      "settings": {
+        "fontStyle": "bold strikethrough"
+      }
+    },
+    {
+      "name": "Markup - Bold-Italic-Strikethrough",
+      "scope": [
+        "markup.bold markup.italic markup.strikethrough",
+        "markup.bold markup.strikethrough markup.italic",
+        "markup.italic markup.bold markup.strikethrough",
+        "markup.italic markup.strikethrough markup.bold",
+        "markup.strikethrough markup.bold markup.italic",
+        "markup.strikethrough markup.italic markup.bold"
+      ],
+      "settings": {
+        "fontStyle": "bold italic strikethrough"
       }
     }
   ],

@@ -1,3 +1,10 @@
+// Generates all possible permutations of the provided scopes.
+function permuteScopes(...scopes) {
+  if (scopes.length <= 1) return scopes;
+  return scopes.flatMap(s =>
+    permuteScopes(...scopes.filter(t => t != s)).map(p => `${s} ${p}`)
+  );
+}
 
 export const themes = ["light", "dark"];
 
@@ -426,14 +433,7 @@ export const colorThemeData = {
     },
     {
       name: "Markup - Bold-Italic",
-      scope: [
-        "markup.bold markup.italic",
-        "markup.italic markup.bold",
-        "markup.quote markup.bold",
-        "markup.bold markup.italic string",
-        "markup.italic markup.bold string",
-        "markup.quote markup.bold string",
-      ],
+      scope: permuteScopes("markup.bold", "markup.italic"),
       settings: {
         fontStyle: "bold italic",
       },
@@ -443,6 +443,31 @@ export const colorThemeData = {
       scope: ["markup.strikethrough"],
       settings: {
         fontStyle: "strikethrough",
+      },
+    },
+    {
+      name: "Markup - Italic-Strikethrough",
+      scope: permuteScopes("markup.italic", "markup.strikethrough"),
+      settings: {
+        fontStyle: "italic strikethrough",
+      },
+    },
+    {
+      name: "Markup - Bold-Strikethrough",
+      scope: permuteScopes("markup.bold", "markup.strikethrough"),
+      settings: {
+        fontStyle: "bold strikethrough",
+      },
+    },
+    {
+      name: "Markup - Bold-Italic-Strikethrough",
+      scope: permuteScopes(
+        "markup.bold",
+        "markup.italic",
+        "markup.strikethrough"
+      ),
+      settings: {
+        fontStyle: "bold italic strikethrough",
       },
     },
     // {
