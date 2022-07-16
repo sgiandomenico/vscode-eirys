@@ -9,7 +9,8 @@
     {
       "name": "Source Default",
       "scope": [
-        "source"
+        "source",
+        "markup.fenced_code meta.embedded"
       ],
       "settings": {
         "foreground": "#666"
@@ -270,22 +271,50 @@
       }
     },
     {
-      "name": "Markdown - Plain",
+      "name": "Markdown - Punctuation",
       "scope": [
-        "text.html.markdown",
-        "punctuation.definition.list_item.markdown"
+        "markup punctuation.definition",
+        "text.html.markdown punctuation.definition"
       ],
       "settings": {
-        "foreground": "#000"
+        "foreground": "#777"
       }
     },
     {
-      "name": "Markdown - Raw Inline",
+      "name": "Markdown - List Punctuation",
       "scope": [
-        "text.html.markdown markup.inline.raw"
+        "markup punctuation.definition.list"
+      ],
+      "settings": {
+        "foreground": "#41a"
+      }
+    },
+    {
+      "name": "Markdown - Quote Punctuation",
+      "scope": [
+        "markup.quote punctuation.definition.quote"
+      ],
+      "settings": {
+        "foreground": "#04a"
+      }
+    },
+    {
+      "name": "Markdown - Raw",
+      "scope": [
+        "text.html.markdown markup.inline.raw",
+        "markup.fenced_code.block"
       ],
       "settings": {
         "foreground": "#c30"
+      }
+    },
+    {
+      "name": "Code Block Language",
+      "scope": [
+        "fenced_code.block.language"
+      ],
+      "settings": {
+        "foreground": "#093"
       }
     },
     {

@@ -16,6 +16,9 @@ Lorem ipsum dolor sit amet.
 - **_~~bold italic strikethrough~~_**
 
 1. `inline raw`
+1. _`italic raw`_
+1. **`bold raw`**
+1. **_`bold italic raw`_**¸
 1. http://example.com
 1. [link](http://example.com)
 
@@ -26,8 +29,9 @@ Unspecified raw block
 ---
 
 ```javascript
-function javascript() {
-  if (true) doStuff();
+function javascript(arg) {
+  const val = 1;
+  if (arg == true) doStuff();
 }
 ```
 

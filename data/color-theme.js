@@ -31,7 +31,7 @@ export const colorThemeData = {
     {
       name: "Source Default",
       // Note: this includes all unstyled elements, such as punctuation.
-      scope: ["source"],
+      scope: ["source", "markup.fenced_code meta.embedded"],
       settings: {
         foreground: {
           "theme:light": "#666",
@@ -365,21 +365,50 @@ export const colorThemeData = {
     //#endregion
     //#region -- Markdown ------------------------------------------------------
     {
-      name: "Markdown - Plain",
+      name: "Markdown - Punctuation",
       scope: [
-        "text.html.markdown",
-        "punctuation.definition.list_item.markdown",
+        "markup punctuation.definition",
+        "text.html.markdown punctuation.definition",
       ],
       settings: {
         foreground: {
-          "theme:light": "#000",
-          "theme:dark": "#fff",
+          "theme:light": "#777",
+          "theme:dark": "#aaa",
         },
       },
     },
     {
-      name: "Markdown - Raw Inline",
-      scope: ["text.html.markdown markup.inline.raw"],
+      name: "Markdown - List Punctuation",
+      scope: ["markup punctuation.definition.list"],
+      settings: {
+        "theme:light": {
+          foreground: "#41a",
+        },
+        "theme:dark": {
+          // "foreground": "#5bf"
+          // "foreground": "#f0f"
+          foreground: "#96f",
+          fontStyle: "bold", // Compensate for reduced contrast.
+        },
+      },
+    },
+    {
+      name: "Markdown - Quote Punctuation",
+      scope: ["markup.quote punctuation.definition.quote"],
+      settings: {
+        foreground: {
+          "theme:light": "#04a",
+          // "theme:dark": "#96f",
+          "theme:dark": "#5bf",
+        },
+      },
+    },
+    {
+      name: "Markdown - Raw",
+      scope: [
+        "text.html.markdown markup.inline.raw",
+        "markup.fenced_code.block",
+      ],
       settings: {
         // TODO
         foreground: {
@@ -388,34 +417,23 @@ export const colorThemeData = {
         },
       },
     },
+    {
+      name: "Code Block Language",
+      scope: ["fenced_code.block.language"],
+      settings: {
+        foreground: {
+          "theme:light": "#093",
+          "theme:dark": "#0f9",
+        },
+      },
+    },
     // {
-    //     "name": "Markdown - Markup Raw Inline",
-    //     "scope": [
-    //         "text.html.markdown markup.inline.raw.markdown"
-    //     ],
-    //     "settings": {
-    //         "foreground": "#C792EA"
-    //     }
-    // },
-    // {
-    //     "name": "Markdown - Markup Raw Inline Punctuation",
-    //     "scope": [
-    //         "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
-    //     ],
-    //     "settings": {
-    //         "foreground": "#65737E"
-    //     }
-    // },
-    // {
-    //   "name": "Markdown - Heading",
-    //   "scope": [
-    //     "markdown.heading",
-    //     "markup.heading | markup.heading entity.name",
-    //     "markup.heading.markdown punctuation.definition.heading.markdown"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#C3E88D"
-    //   }
+    //   name: "Markdown - Heading",
+    //   scope: ["markup.heading"],
+    //   settings: {
+    //     // foreground: "#",
+    //     fontStyle: "underline",
+    //   },
     // },
     {
       name: "Markup - Italic",
