@@ -24,7 +24,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#080"
+        "foreground": "#090"
       }
     },
     {
@@ -171,7 +171,7 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#04a"
+        "foreground": "#04e"
       }
     },
     {
@@ -191,7 +191,7 @@
         "variable.other.enummember"
       ],
       "settings": {
-        "foreground": "#a80"
+        "foreground": "#b60"
       }
     },
     {
@@ -295,7 +295,7 @@
         "markup.quote punctuation.definition.quote"
       ],
       "settings": {
-        "foreground": "#04a"
+        "foreground": "#04e"
       }
     },
     {
@@ -396,7 +396,7 @@
       "italic": true
     },
     "variable.readonly": {
-      "foreground": "#a80"
+      "foreground": "#b60"
     },
     "variable.local": {
       "italic": false
@@ -405,7 +405,7 @@
       "foreground": "#740"
     },
     "variable.defaultLibrary": {
-      "foreground": "#a80"
+      "foreground": "#b60"
     }
   }
 }

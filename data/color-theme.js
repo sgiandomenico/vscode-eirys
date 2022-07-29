@@ -47,7 +47,7 @@ export const colorThemeData = {
         // "foreground": "#008000"
         // "foreground": "#6A9955"
         foreground: {
-          "theme:light": "#080",
+          "theme:light": "#090",
           "theme:dark": "#0b0",
         },
       },
@@ -237,7 +237,7 @@ export const colorThemeData = {
       ],
       settings: {
         foreground: {
-          "theme:light": "#04a",
+          "theme:light": "#04e",
           "theme:dark": "#5bf",
         },
       },
@@ -257,7 +257,7 @@ export const colorThemeData = {
       scope: ["variable.other.constant", "variable.other.enummember"],
       settings: {
         foreground: {
-          "theme:light": "#a80",
+          "theme:light": "#b60",
           "theme:dark": "#fc0",
         },
       },
@@ -397,7 +397,7 @@ export const colorThemeData = {
       scope: ["markup.quote punctuation.definition.quote"],
       settings: {
         foreground: {
-          "theme:light": "#04a",
+          "theme:light": "#04e",
           // "theme:dark": "#96f",
           "theme:dark": "#5bf",
         },
@@ -509,7 +509,7 @@ export const colorThemeData = {
     "variable.readonly": {
       // Global constants.
       foreground: {
-        "theme:light": "#a80",
+        "theme:light": "#b60",
         "theme:dark": "#fc0",
       },
     },
@@ -526,7 +526,7 @@ export const colorThemeData = {
     },
     "variable.defaultLibrary": {
       foreground: {
-        "theme:light": "#a80",
+        "theme:light": "#b60",
         "theme:dark": "#fc0",
       },
     },
