@@ -3,7 +3,9 @@
   "name": "Eirys Light",
   "colors": {
     "editor.background": "#fff",
-    "editor.foreground": "#000"
+    "editor.foreground": "#000",
+    "editorInlayHint.background": "#0000",
+    "editorInlayHint.foreground": "#999"
   },
   "tokenColors": [
     {

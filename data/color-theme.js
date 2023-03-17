@@ -23,6 +23,11 @@ export const colorThemeData = {
       "theme:light": "#000",
       "theme:dark": "#fff",
     },
+    "editorInlayHint.background": "#0000",
+    "editorInlayHint.foreground": {
+      "theme:light": "#999",
+      "theme:dark": "#999",
+    },
     // "activityBarBadge.background": "#007acc",
     // "sideBarTitle.foreground": "#bbbbbb"
   },

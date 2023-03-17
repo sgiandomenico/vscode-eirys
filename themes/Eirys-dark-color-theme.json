@@ -3,7 +3,9 @@
   "name": "Eirys Dark",
   "colors": {
     "editor.background": "#000",
-    "editor.foreground": "#fff"
+    "editor.foreground": "#fff",
+    "editorInlayHint.background": "#0000",
+    "editorInlayHint.foreground": "#999"
   },
   "tokenColors": [
     {
