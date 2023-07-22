@@ -137,8 +137,12 @@ export const colorThemeData = {
       },
     },
     {
-      name: "this",
-      scope: ["variable.language.this"],
+      name: "this/self",
+      scope: [
+        "variable.language.this",
+        "variable.language.special.self",
+        "variable.parameter.function.language.special.self",
+      ],
       settings: {
         foreground: {
           "theme:light": "#990",

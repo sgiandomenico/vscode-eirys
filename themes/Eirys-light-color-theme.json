@@ -87,9 +87,11 @@
       }
     },
     {
-      "name": "this",
+      "name": "this/self",
       "scope": [
-        "variable.language.this"
+        "variable.language.this",
+        "variable.language.special.self",
+        "variable.parameter.function.language.special.self"
       ],
       "settings": {
         "foreground": "#990"

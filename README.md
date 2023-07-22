@@ -18,6 +18,7 @@ This theme is currently optimized for:
 
 - JavaScript/TypeScript
   - Vue, React
+- Python (in progress)
 - HTML (in progress)
 - Markdown (in progress)
 
