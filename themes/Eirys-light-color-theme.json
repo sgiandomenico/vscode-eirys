@@ -384,6 +384,16 @@
       "settings": {
         "fontStyle": "bold italic strikethrough"
       }
+    },
+    {
+      "name": "Markdown - Separator",
+      "scope": [
+        "meta.separator.markdown"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#093"
+      }
     }
   ],
   "semanticHighlighting": true,

@@ -516,6 +516,17 @@ export const colorThemeData = {
     //     "fontStyle": "underline",
     //   }
     // },
+    {
+      name: "Markdown - Separator",
+      scope: ["meta.separator.markdown"],
+      settings: {
+        fontStyle: "bold",
+        foreground: {
+          "theme:light": "#093",
+          "theme:dark": "#0f9",
+        },
+      },
+    },
     //#endregion
   ],
   semanticHighlighting: true,
