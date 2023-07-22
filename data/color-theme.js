@@ -243,6 +243,7 @@ export const colorThemeData = {
         // composition required to implement that here -- so instead we override
         // this in the String rule, which hopefully covers most situations.
         "meta.object-literal.key string",
+        "meta.member",
         "support.variable.property",
         "support.type.property-name",
       ],

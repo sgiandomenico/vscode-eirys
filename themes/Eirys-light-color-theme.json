@@ -161,6 +161,7 @@
         "variable.object.property",
         "meta.object-literal.key",
         "meta.object-literal.key string",
+        "meta.member",
         "support.variable.property",
         "support.type.property-name"
       ],
