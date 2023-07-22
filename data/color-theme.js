@@ -173,6 +173,7 @@ export const colorThemeData = {
         foreground: {
           "theme:light": "#a3a",
           "theme:dark": "#f8f",
+          // "theme:dark": "#5bf",
         },
       },
     },
@@ -187,17 +188,17 @@ export const colorThemeData = {
         fontStyle: "", // Prevent spillover from declaration formatting.
       },
     },
-    {
-      name: "Declaration",
-      scope: [
-        "meta.definition",
-        "meta.parameters variable.parameter",
-        "meta.object-literal.key",
-      ],
-      settings: {
-        fontStyle: "underline",
-      },
-    },
+    // {
+    //   name: "Declaration",
+    //   scope: [
+    //     "meta.definition",
+    //     "meta.parameters variable.parameter",
+    //     "meta.object-literal.key",
+    //   ],
+    //   settings: {
+    //     fontStyle: "underline",
+    //   },
+    // },
     {
       name: "Operator",
       scope: ["keyword.operator"],
@@ -233,6 +234,7 @@ export const colorThemeData = {
         "variable.other.property",
         "variable.other.object.member",
         "variable.other.object.property",
+        "variable.other.constant.property",
         "variable.object.property",
         "meta.object-literal.key",
         // String used as a key.  Note: ideally we want to include only strings
@@ -246,38 +248,21 @@ export const colorThemeData = {
       ],
       settings: {
         foreground: {
-          "theme:light": "#04e",
-          "theme:dark": "#5bf",
+          // "theme:light": "#04e",
+          // "theme:dark": "#5bf",
+          "theme:light": "#740",
+          "theme:dark": "#ffa",
         },
       },
     },
     {
+      // Fallback in case semantic tokens don't apply.
       name: "Variable",
       scope: ["variable", "string constant.other.placeholder"],
       settings: {
         foreground: {
           "theme:light": "#000",
           "theme:dark": "#fff",
-        },
-      },
-    },
-    {
-      name: "Constant Variable (Global/Default)",
-      scope: ["variable.other.constant", "variable.other.enummember"],
-      settings: {
-        foreground: {
-          "theme:light": "#b60",
-          "theme:dark": "#fc0",
-        },
-      },
-    },
-    {
-      name: "Local const Variable",
-      scope: ["meta.block variable.other.constant"],
-      settings: {
-        foreground: {
-          "theme:light": "#740",
-          "theme:dark": "#ffa",
         },
       },
     },
@@ -290,6 +275,7 @@ export const colorThemeData = {
         },
         "theme:dark": {
           foreground: "#96f",
+          // foreground: "#5bf",
           fontStyle: "bold", // Compensate for reduced contrast.
         },
       },
@@ -307,6 +293,30 @@ export const colorThemeData = {
           "theme:light": "#093",
           "theme:dark": "#0f9",
         },
+      },
+    },
+    {
+      name: "Type Parameter",
+      scope: ["entity.name.type.parameter"],
+      settings: {
+        foreground: {
+          // "theme:light": "#093",
+          // "theme:dark": "#0f9",
+          "theme:light": "#04e",
+          "theme:dark": "#5bf",
+        },
+      },
+    },
+    {
+      name: "Type Annotation",
+      scope: [
+        "meta.type.annotation support.type",
+        "meta.type.annotation entity.name",
+        "meta.return.type support.type",
+        "meta.return.type entity.name",
+      ],
+      settings: {
+        fontStyle: "italic",
       },
     },
     //#endregion
@@ -511,33 +521,46 @@ export const colorThemeData = {
   semanticHighlighting: true,
   semanticTokenColors: {
     //#region -- Variables -----------------------------------------------------
-    variable: {
-      // Globals.
-      italic: true,
-    },
-    "variable.readonly": {
-      // Global constants.
-      foreground: {
-        "theme:light": "#b60",
-        "theme:dark": "#fc0",
-      },
-    },
-    "variable.local": {
-      // Local variables.
-      italic: false,
-    },
-    "variable.local.readonly": {
-      // Local constants.
-      foreground: {
-        "theme:light": "#740",
-        "theme:dark": "#ffa",
-      },
-    },
+    // variable: {
+    //   // Globals.
+    //   foreground: {
+    //     "theme:light": "#b60",
+    //     "theme:dark": "#fc0",
+    //   },
+    //   italic: true,
+    // },
+    // "variable.local": {
+    //   foreground: {
+    //     "theme:light": "#000",
+    //     "theme:dark": "#fff",
+    //   },
+    // },
+    // parameter: {
+    //   foreground: {
+    //     "theme:light": "#000",
+    //     "theme:dark": "#fff",
+    //   },
+    //   italic: true,
+    // },
+    // property: {
+    //   foreground: {
+    //     "theme:light": "#740",
+    //     "theme:dark": "#ffa",
+    //   },
+    //   italic: true,
+    // },
     "variable.defaultLibrary": {
       foreground: {
         "theme:light": "#b60",
         "theme:dark": "#fc0",
       },
+      // italic: false,
+    },
+    "*.readonly": {
+      italic: true,
+    },
+    "*.declaration": {
+      underline: true,
     },
     //#endregion
   },

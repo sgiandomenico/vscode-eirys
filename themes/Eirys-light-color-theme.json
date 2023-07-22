@@ -129,17 +129,6 @@
       }
     },
     {
-      "name": "Declaration",
-      "scope": [
-        "meta.definition",
-        "meta.parameters variable.parameter",
-        "meta.object-literal.key"
-      ],
-      "settings": {
-        "fontStyle": "underline"
-      }
-    },
-    {
       "name": "Operator",
       "scope": [
         "keyword.operator"
@@ -168,6 +157,7 @@
         "variable.other.property",
         "variable.other.object.member",
         "variable.other.object.property",
+        "variable.other.constant.property",
         "variable.object.property",
         "meta.object-literal.key",
         "meta.object-literal.key string",
@@ -175,7 +165,7 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#04e"
+        "foreground": "#740"
       }
     },
     {
@@ -186,25 +176,6 @@
       ],
       "settings": {
         "foreground": "#000"
-      }
-    },
-    {
-      "name": "Constant Variable (Global/Default)",
-      "scope": [
-        "variable.other.constant",
-        "variable.other.enummember"
-      ],
-      "settings": {
-        "foreground": "#b60"
-      }
-    },
-    {
-      "name": "Local const Variable",
-      "scope": [
-        "meta.block variable.other.constant"
-      ],
-      "settings": {
-        "foreground": "#740"
       }
     },
     {
@@ -227,6 +198,27 @@
       ],
       "settings": {
         "foreground": "#093"
+      }
+    },
+    {
+      "name": "Type Parameter",
+      "scope": [
+        "entity.name.type.parameter"
+      ],
+      "settings": {
+        "foreground": "#04e"
+      }
+    },
+    {
+      "name": "Type Annotation",
+      "scope": [
+        "meta.type.annotation support.type",
+        "meta.type.annotation entity.name",
+        "meta.return.type support.type",
+        "meta.return.type entity.name"
+      ],
+      "settings": {
+        "fontStyle": "italic"
       }
     },
     {
@@ -396,20 +388,14 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "variable": {
-      "italic": true
-    },
-    "variable.readonly": {
-      "foreground": "#b60"
-    },
-    "variable.local": {
-      "italic": false
-    },
-    "variable.local.readonly": {
-      "foreground": "#740"
-    },
     "variable.defaultLibrary": {
       "foreground": "#b60"
+    },
+    "*.readonly": {
+      "italic": true
+    },
+    "*.declaration": {
+      "underline": true
     }
   }
 }
