@@ -1,3 +1,23 @@
 {
-  "jest.jestCommandLine": "npm run test:unit --"
+  "jest.jestCommandLine": "npm run test:unit --",
+  "editor.semanticTokenColorCustomizations": {
+    "[Eirys Dark]": {
+      "rules": {}
+    },
+    "[Eirys Light]": {
+      "rules": {}
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Eirys Dark]": {
+      "textMateRules": []
+    },
+    "[Eirys Light]": {
+      "textMateRules": []
+    }
+  },
+  "workbench.colorCustomizations": {
+    "[Eirys Dark]": {},
+    "[Eirys Light]": {}
+  },
 }
