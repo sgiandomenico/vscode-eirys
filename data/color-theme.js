@@ -285,6 +285,14 @@ export const colorThemeData = {
       },
     },
     {
+      // Fallback in case semantic tokens don't apply.
+      name: "Constant",
+      scope: ["variable.other.constant"],
+      settings: {
+        fontStyle: "italic",
+      },
+    },
+    {
       name: "Storage",
       scope: ["storage.type", "storage.modifier"],
       settings: {

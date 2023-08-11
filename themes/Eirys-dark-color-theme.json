@@ -193,6 +193,15 @@
       }
     },
     {
+      "name": "Constant",
+      "scope": [
+        "variable.other.constant"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Storage",
       "scope": [
         "storage.type",
