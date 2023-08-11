@@ -189,8 +189,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#96f",
-        "fontStyle": "bold"
+        "foreground": "#a7f"
       }
     },
     {
@@ -232,7 +231,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#96f"
+        "foreground": "#a7f"
       }
     },
     {
@@ -287,8 +286,7 @@
         "markup punctuation.definition.list"
       ],
       "settings": {
-        "foreground": "#96f",
-        "fontStyle": "bold"
+        "foreground": "#a7f"
       }
     },
     {

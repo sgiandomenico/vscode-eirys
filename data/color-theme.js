@@ -280,9 +280,11 @@ export const colorThemeData = {
           foreground: "#41a",
         },
         "theme:dark": {
-          foreground: "#96f",
+          // foreground: "#96f",
           // foreground: "#5bf",
-          fontStyle: "bold", // Compensate for reduced contrast.
+          foreground: "#a7f",
+          // foreground: "#b4f",
+          // fontStyle: "bold", // Compensate for reduced contrast.
         },
       },
     },
@@ -290,6 +292,7 @@ export const colorThemeData = {
       name: "Class, Support",
       scope: [
         "entity.name",
+        // "entity.name.type",
         "support.type",
         "support.class",
         "support.type.sys-types",
@@ -337,7 +340,8 @@ export const colorThemeData = {
         // "foreground": "#f8f"
         foreground: {
           "theme:light": "#60c",
-          "theme:dark": "#96f",
+          // "theme:dark": "#96f",
+          "theme:dark": "#a7f",
         },
       },
     },
@@ -412,8 +416,9 @@ export const colorThemeData = {
         "theme:dark": {
           // "foreground": "#5bf"
           // "foreground": "#f0f"
-          foreground: "#96f",
-          fontStyle: "bold", // Compensate for reduced contrast.
+          // foreground: "#96f",
+          foreground: "#a7f",
+          // fontStyle: "bold", // Compensate for reduced contrast.
         },
       },
     },
