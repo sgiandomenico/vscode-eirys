@@ -98,9 +98,9 @@ export const colorThemeData = {
       name: "Escape Character",
       scope: [
         "constant.character.escape",
-        "punctuation.definition.template-expression",
-        "punctuation.definition.variable",
-        "punctuation.definition.evaluation",
+        "punctuation.definition.template-expression", // JS
+        "punctuation.definition.variable", // Shell
+        "punctuation.definition.evaluation", // Shell
       ],
       settings: {
         foreground: {
@@ -173,6 +173,7 @@ export const colorThemeData = {
         "keyword.control",
         "keyword.operator.logical",
         "keyword.generator",
+        "punctation.separator.statement", // Shell
       ],
       settings: {
         foreground: {
@@ -230,6 +231,18 @@ export const colorThemeData = {
         },
       },
     },
+    {
+      name: "Arithmetic",
+      scope: [
+        "meta.arithmetic", // Shell
+      ],
+      settings: {
+        foreground: {
+          "theme:light": "#000",
+          "theme:dark": "#fff",
+        },
+      },
+    },
     //#endregion
     //#region -- Variables -----------------------------------------------------
     {
@@ -262,7 +275,6 @@ export const colorThemeData = {
       },
     },
     {
-      // Fallback in case semantic tokens don't apply.
       name: "Variable",
       scope: ["variable", "string constant.other.placeholder"],
       settings: {

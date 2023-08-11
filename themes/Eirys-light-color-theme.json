@@ -114,7 +114,8 @@
       "scope": [
         "keyword.control",
         "keyword.operator.logical",
-        "keyword.generator"
+        "keyword.generator",
+        "punctation.separator.statement"
       ],
       "settings": {
         "foreground": "#a3a"
@@ -151,6 +152,15 @@
       ],
       "settings": {
         "foreground": "#088"
+      }
+    },
+    {
+      "name": "Arithmetic",
+      "scope": [
+        "meta.arithmetic"
+      ],
+      "settings": {
+        "foreground": "#000"
       }
     },
     {
