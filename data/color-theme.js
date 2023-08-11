@@ -96,7 +96,12 @@ export const colorThemeData = {
     },
     {
       name: "Escape Character",
-      scope: ["constant.character.escape"],
+      scope: [
+        "constant.character.escape",
+        "punctuation.definition.template-expression",
+        "punctuation.definition.variable",
+        "punctuation.definition.evaluation",
+      ],
       settings: {
         foreground: {
           "theme:light": "#06c",
