@@ -168,6 +168,16 @@ export const colorThemeData = {
     //#endregion
     //#region -- Operations ----------------------------------------------------
     {
+      name: "Keyword Default",
+      scope: ["keyword"],
+      settings: {
+        foreground: {
+          "theme:light": "#60c",
+          "theme:dark": "#a7f",
+        },
+      },
+    },
+    {
       name: "Control Flow Keyword",
       scope: [
         "keyword.control",
@@ -254,6 +264,8 @@ export const colorThemeData = {
         "variable.other.object.property",
         "variable.other.constant.property",
         "variable.object.property",
+        "constant.object.key", // GraphQL
+        "constant.object.key string", // GraphQL
         "meta.object-literal.key",
         // String used as a key.  Note: ideally we want to include only strings
         // that are directly used as keys, not those used in computed keys.
@@ -286,7 +298,7 @@ export const colorThemeData = {
     },
     {
       // Fallback in case semantic tokens don't apply.
-      name: "Constant",
+      name: "Readonly Variable",
       scope: ["variable.other.constant"],
       settings: {
         fontStyle: "italic",

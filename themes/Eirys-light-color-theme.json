@@ -110,6 +110,15 @@
       }
     },
     {
+      "name": "Keyword Default",
+      "scope": [
+        "keyword"
+      ],
+      "settings": {
+        "foreground": "#60c"
+      }
+    },
+    {
       "name": "Control Flow Keyword",
       "scope": [
         "keyword.control",
@@ -172,6 +181,8 @@
         "variable.other.object.property",
         "variable.other.constant.property",
         "variable.object.property",
+        "constant.object.key",
+        "constant.object.key string",
         "meta.object-literal.key",
         "meta.object-literal.key string",
         "meta.member",
@@ -193,7 +204,7 @@
       }
     },
     {
-      "name": "Constant",
+      "name": "Readonly Variable",
       "scope": [
         "variable.other.constant"
       ],
