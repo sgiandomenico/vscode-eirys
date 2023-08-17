@@ -183,7 +183,7 @@ export const colorThemeData = {
         "keyword.control",
         "keyword.operator.logical",
         "keyword.generator",
-        "punctation.separator.statement", // Shell
+        "punctuation.separator.statement", // Shell
       ],
       settings: {
         foreground: {

@@ -124,7 +124,7 @@
         "keyword.control",
         "keyword.operator.logical",
         "keyword.generator",
-        "punctation.separator.statement"
+        "punctuation.separator.statement"
       ],
       "settings": {
         "foreground": "#a3a"
